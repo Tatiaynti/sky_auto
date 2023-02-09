@@ -1,5 +1,7 @@
+import math
 def square(sq):
-    print(round(sq*sq))
+    sq = math.ceil(sq)
+    print(sq*sq)
 
-square(1.5)
+square(1.21)
 square(3)
