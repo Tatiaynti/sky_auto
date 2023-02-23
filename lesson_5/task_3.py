@@ -14,7 +14,7 @@ add_element = driver.find_element(By.CSS_SELECTOR, add_locator)
 for x in range(0,5):
     add_element.click()
 
-delete_btns_length = len(driver.find_elements(By.CSS_SELECTOR, 'div>button.added-manually'))
+delete_btns_length = len(driver.find_elements(By.CSS_SELECTOR, ".added-manually"))
 print(delete_btns_length)
 
 sleep(5)
