@@ -8,10 +8,6 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 driver.maximize_window()
 
 driver.get("http://the-internet.herokuapp.com/entry_ad")
-
-btn_locator = '.modal-footer>p'
-btn_element = driver.find_element(By.CSS_SELECTOR, btn_locator)
-
-btn_element.click()
+driver.find_element(By.CSS_SELECTOR, "div.modal-footer").click()
 
 sleep(5)
