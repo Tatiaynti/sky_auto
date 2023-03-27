@@ -27,3 +27,4 @@ class Company:
         my_token["x-client-token"] = self.get_token()
         res = requests.post(self.url+'/company', json=company, headers=my_token)
         return res.json()
+    
